@@ -15,15 +15,41 @@
       padding: 20px;
       font-family: Arial, sans-serif;
     }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      margin: 10px;
+    }
+
+    .button:hover {
+      background-color: #2980b9;
+    }
+
+    .center {
+      text-align: center;
+    }
   </style>
 </head>
 
 <body>
-  <h1>Eris Discord Bot - Terms of Service</h1>
-  <p>
-    By adding and using the Eris bot on your Discord server, you agree to abide by these Terms of Service. If you do not
-    agree with any part of these terms, you should refrain from using the bot.
-  </p>
+  <div class="center">
+    <h1>Eris Bot - Terms of Service</h1>
+    <!-- Animated Button to Scroll to Terms of Service -->
+    <button class="button" onclick="scrollToTerms()">Read Terms of Service</button>
+    <!-- Animated Button to Redirect to Example Website -->
+    <a href="https://discord.com/api/oauth2/authorize?client_id=1127678381798994000&scope=applications.commands+bot&permissions=545195949174" class="button">Add Eris to your server</a>
+  </div>
+
+  <!-- Centered button at the bottom -->
+  <div class="center">
+    <a href="https://discord.gg/HuzKUpSJ2x" class="button">Support Discord Server</a>
+  </div>
 
   <h2>Use of the Bot</h2>
   <p>
@@ -69,22 +95,32 @@
     for any reason, without liability.
   </p>
 
-  <h2>Modifications to the Terms</h2>
+  <h2 id="terms">Terms of Service</h2>
   <p>
-    The bot's owner may update or modify these Terms of Service at any time. It is your responsibility to review these
-    terms periodically. Continued use of the Eris bot after any changes constitutes acceptance of the updated terms.
+    By adding and using the Eris bot on your Discord server, you agree to abide by these Terms of Service. If you do not
+    agree with any part of these terms, you should refrain from using the bot.
   </p>
+
+  <!-- Rest of the Terms of Service content... -->
 
   <h2>Governing Law</h2>
   <p>
-    These Terms of Service shall be governed by and construed in accordance with the laws of United States, without
+    These Terms of Service shall be governed by and construed in accordance with the laws of the United States, without
     regard to its conflict of law principles.
   </p>
 
   <h2>Contact</h2>
   <p>
-    If you have any questions or concerns regarding these Terms of Service, you may contact via discord burlone413.
+    If you have any questions or concerns regarding these Terms of Service, you may contact via Discord at burlone413.
   </p>
+
+  <!-- Optional JavaScript to scroll to the Terms of Service section -->
+  <script>
+    function scrollToTerms() {
+      const termsSection = document.getElementById('terms');
+      termsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
 
 </body>
 
